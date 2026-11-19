@@ -1,6 +1,1 @@
-[
-  { "file": "1-cover.jpg", "path": "/", "viewport": { "width": 1280, "height": 800 } },
-  { "file": "2-guide.jpg", "path": "/", "viewport": { "width": 1280, "height": 800 } },
-  { "file": "3-roadmap.jpg", "path": "/#roadmap", "viewport": { "width": 1280, "height": 800 } },
-  { "file": "4-missables.jpg", "path": "/#missables", "viewport": { "width": 1280, "height": 800 } }
-]
+[{"file":"1-cover.jpg","view":"Checklist with a trophy guide open beside it, progress seeded at 13 of 55 earned, spoiler setting on","viewport":{"height":800,"width":1280}},{"file":"2-roadmap.jpg","view":"Roadmap tab: the six phases to the platinum","viewport":{"height":800,"width":1280}},{"file":"3-missables.jpg","view":"Missables and Risks tab: the one possibly missable trophy and the three save habits","viewport":{"height":800,"width":1280}},{"file":"4-spoilers-off.jpg","view":"Checklist with spoilers off and a kind filter applied, showing hidden story trophies revealed","viewport":{"height":800,"width":1280}}]

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vice City Trophy Ledger — GTA VI PS5 Trophy Guide &amp; Tracker</title>
+<meta name="description" content="An offline guide and checklist for all 55 Grand Theft Auto VI trophies on PS5: every name, description and grade, a guide for each, a roadmap to the platinum and the missables flagged.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-sun" aria-hidden="true"></div>
+  <div class="masthead-text">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; Offline guide</p>
+    <h1>Vice City Trophy Ledger</h1>
+    <p class="lede">All 55 trophies, a real guide for each one, and a checklist that remembers where you are — no account, no network, no ads.</p>
+  </div>
+  <div class="platinum-card" id="platinumCard">
+    <div class="big-count"><span id="earnedCount">0</span><span class="of">/ 55</span></div>
+    <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+    <p class="platinum-line" id="platinumLine">0% to the platinum</p>
+    <p class="grade-counts" id="gradeCounts"></p>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist" aria-label="Guide sections">
+  <button class="tab active" data-view="tracker" role="tab" aria-selected="true" type="button">Tracker</button>
+  <button class="tab" data-view="roadmap" role="tab" aria-selected="false" type="button">Roadmap to Platinum</button>
+  <button class="tab" data-view="missables" role="tab" aria-selected="false" type="button">Missables &amp; Risks</button>
+  <button class="tab" data-view="sources" role="tab" aria-selected="false" type="button">Sources &amp; Notes</button>
+</nav>
+
+<main>
+  <section id="view-tracker" class="view active">
+    <div class="toolbar">
+      <label class="tool">Search <input id="search" type="search" placeholder="Trophy, mission or keyword…" autocomplete="off"></label>
+      <label class="tool">Kind
+        <select id="kindFilter"></select>
+      </label>
+      <label class="tool">Grade
+        <select id="gradeFilter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="tool">Show
+        <select id="statusFilter">
+          <option value="all">All trophies</option>
+          <option value="earned">Earned only</option>
+          <option value="remaining">Not yet earned</option>
+          <option value="missable">Missable / risky only</option>
+        </select>
+      </label>
+      <label class="tool">Sort
+        <select id="sortFilter">
+          <option value="list">List order</option>
+          <option value="grade">Grade, then list</option>
+          <option value="name">Name A–Z</option>
+        </select>
+      </label>
+      <label class="tool spoiler-tool"><input id="spoilerToggle" type="checkbox" checked> Hide story trophies until earned</label>
+    </div>
+
+    <div class="toolbar secondary">
+      <span id="matchLine" class="match-line"></span>
+      <span class="spacer"></span>
+      <button id="exportBtn" type="button">Export progress</button>
+      <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+      <button id="resetBtn" type="button" class="danger">Reset all</button>
+    </div>
+
+    <p id="emptyNote" class="empty-note" hidden>No trophies match these filters. Loosen the search or pick another kind.</p>
+    <ul id="trophyList" class="trophy-list"></ul>
+  </section>
+
+  <section id="view-roadmap" class="view">
+    <p class="view-intro">The platinum is a long road, not a hard one — roughly 200 hours, all single-player, no difficulty trophies and no online trophies. Work the phases in order; everything outside the story stays open after the credits, so cleanup can wait until the story is done.</p>
+    <ol id="roadmapList" class="roadmap"></ol>
+  </section>
+
+  <section id="view-missables" class="view">
+    <p class="view-intro">Built from the official descriptions and the cited guides. The game has no mission replay and no New Game Plus, so the safety net is manual saves: keep one at the start of every chapter and one untouched save from just before the final mission.</p>
+    <div id="missableList" class="risk-list"></div>
+  </section>
+
+  <section id="view-sources" class="view">
+    <p class="view-intro">Every name, description and grade below is the official PSN list. The guides are written in this guide's own words from those descriptions and the sources listed — where no source has confirmed a method at launch, the guide says so instead of inventing one.</p>
+    <h2>Sources</h2>
+    <ul id="sourceList" class="source-list"></ul>
+    <h2>How this guide was built</h2>
+    <p id="buildNote"></p>
+    <h2>Your save file</h2>
+    <p>Progress and notes live only in this browser's local storage, under the key <code>vice-trophy-ledger-v1</code>. Export it to keep a backup, import it on another machine. Nothing leaves your device — this page makes no network requests at all.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Unofficial fan guide. Not affiliated with, endorsed by or connected to Rockstar Games. Grand Theft Auto and GTA are trademarks of their owners; no official artwork or logos are used here.</p>
+  <p>List frozen from the official PSN trophy list as published 18 November 2026. <span id="footCount"></span></p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
